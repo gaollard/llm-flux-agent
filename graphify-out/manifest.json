@@ -28,16 +28,16 @@
     "hash": "99ee3aedeae9c697a3361ddf588bcca2"
   },
   "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/settings/SettingsPanel.tsx": {
-    "mtime": 1787911872.5913944,
-    "hash": "259e1934fb33a75f883b697ac3e3dae8"
+    "mtime": 1787912843.054231,
+    "hash": "fe0221ebbfd7ee7a8361cb62c5d3c1ed"
   },
   "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/chat/ThreadList.tsx": {
     "mtime": 1787911858.1393003,
     "hash": "7deed2a2361c6e11110ed961d7e0fe1a"
   },
   "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/chat/MessageList.tsx": {
-    "mtime": 1787911861.7913694,
-    "hash": "920187612a57294af43bfea1af93257f"
+    "mtime": 1787912631.852984,
+    "hash": "a54f03ae0cb84b28e8e3bbf478d0cf58"
   },
   "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/chat/Composer.tsx": {
     "mtime": 1787911864.83582,
@@ -68,24 +68,24 @@
     "hash": "7a859bbe6b34d7e5dd07241b236a6866"
   },
   "/Users/xiong.gao/Desktop/flux/src/shared/ipc.ts": {
-    "mtime": 1787911042.2055333,
-    "hash": "571e2b0d54943a4f48b17fdf61b6981d"
+    "mtime": 1787912561.3168159,
+    "hash": "ca114fe5f414feac9fa6d89a3de6e7d9"
   },
   "/Users/xiong.gao/Desktop/flux/src/shared/models.ts": {
-    "mtime": 1787911041.1308453,
-    "hash": "073247561f22cc40953615fd810ef833"
+    "mtime": 1787912560.3641253,
+    "hash": "1e61cc71409e44e6bb4e5733b6de7d86"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/ripgrep.d.ts": {
     "mtime": 1787911251.712766,
     "hash": "4ca84fddc013b7cb7a2d3b10455396a9"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/index.ts": {
-    "mtime": 1787911878.9014418,
+    "mtime": 1787912663.181369,
     "hash": "e5c6061d3e1d48d7f1d9a10088529b4e"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/tools/router.ts": {
-    "mtime": 1787911092.6976385,
-    "hash": "6de21a8ea4800eb4e66a0022e7e73cdb"
+    "mtime": 1787912631.5888352,
+    "hash": "e9e1377a000fb70d25439afc5462613d"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/tools/read-file.ts": {
     "mtime": 1787911077.7640228,
@@ -94,6 +94,14 @@
   "/Users/xiong.gao/Desktop/flux/src/main/tools/grep.ts": {
     "mtime": 1787911304.071754,
     "hash": "4aff25885f2a57ac4c0250432a58b14a"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/tools/shell.ts": {
+    "mtime": 1787912605.9611359,
+    "hash": "f153a4d7c4b105be7e0b23acb131f400"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/tools/skill.ts": {
+    "mtime": 1787912610.836368,
+    "hash": "74d94319213ea449b7592e7890c32781"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/workspace/ignore.ts": {
     "mtime": 1787911052.4661021,
@@ -104,16 +112,20 @@
     "hash": "dd6b243d8e2fc54c332610ec26679c1b"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/agent/llm-client.ts": {
-    "mtime": 1787911679.4461796,
-    "hash": "5742196ea8a60117e7ed27ae3eb75b83"
+    "mtime": 1787912618.852626,
+    "hash": "542ca87ba5e2d3154208220e65a1f05c"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/agent/context-builder.ts": {
-    "mtime": 1787911112.5811324,
-    "hash": "05e6687553d6dbb4a8e39255835c06f5"
+    "mtime": 1787912615.930485,
+    "hash": "294942d414f7a68bec0ce097c0ad3c8d"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/ipc/register.ts": {
-    "mtime": 1787911508.9769077,
-    "hash": "57a4d2f648b8f9b67d3f4ec93b9e4dea"
+    "mtime": 1787912663.18123,
+    "hash": "febc3e80cfc0a297485f4cc413e5ede3"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/skills/loader.ts": {
+    "mtime": 1787912611.2694309,
+    "hash": "20e06f247836f2e0e03f63ea94328bce"
   },
   "/Users/xiong.gao/Desktop/flux/src/main/store/thread-store.ts": {
     "mtime": 1787911294.0800526,
@@ -128,24 +140,24 @@
     "hash": "fdee4e73d0cfadc4f531b71f7794b6a9"
   },
   "/Users/xiong.gao/Desktop/flux/src/preload/index.ts": {
-    "mtime": 1787911132.5441546,
-    "hash": "8904ceb79fe2b1dd12d80ac2fbab2d4c"
+    "mtime": 1787912663.18131,
+    "hash": "e6d08bf8d63a3cdb1fc565c5ab751cb8"
   },
   "/Users/xiong.gao/Desktop/flux/src/preload/index.d.ts": {
-    "mtime": 1787911132.5888605,
-    "hash": "3a36fdb2c52886e702cb93958466549c"
-  },
-  "/Users/xiong.gao/Desktop/flux/prd.md": {
-    "mtime": 1787910006.94256,
-    "hash": "0a9d304bbd03eeea5fdb41e869d1011e"
-  },
-  "/Users/xiong.gao/Desktop/flux/td.md": {
-    "mtime": 1787910131.1588821,
-    "hash": "9c4c3454a26a98ebe42b53dfbef46b06"
+    "mtime": 1787912575.8886437,
+    "hash": "95ce61bba08e959879e4f30ece728e87"
   },
   "/Users/xiong.gao/Desktop/flux/electron-builder.yml": {
     "mtime": 1787911211.58014,
     "hash": "92832f74e4c1836f762914e309b02fd0"
+  },
+  "/Users/xiong.gao/Desktop/flux/doc/prd.md": {
+    "mtime": 1787912181.3269565,
+    "hash": "eb760ef24b433fecc0e0c2aa3d323ac1"
+  },
+  "/Users/xiong.gao/Desktop/flux/doc/td.md": {
+    "mtime": 1787910131.1588821,
+    "hash": "9c4c3454a26a98ebe42b53dfbef46b06"
   },
   "/Users/xiong.gao/Desktop/flux/src/renderer/index.html": {
     "mtime": 1787911138.130202,

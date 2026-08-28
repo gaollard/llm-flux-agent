@@ -3,6 +3,7 @@ import os from 'node:os'
 import path from 'node:path'
 import type { Message } from '@shared/models'
 import type { ChatMessage } from './llm-client'
+import { formatSkillsPrompt, listSkills, matchSkills } from '../skills/loader'
 
 const AGENTS_LIMIT = 32 * 1024
 
@@ -65,15 +66,22 @@ export function buildMessages(options: {
   extraSystem?: string
 }): ChatMessage[] {
   const agents = readAgentsMd(options.workspacePath)
+  const skills = listSkills(options.workspacePath)
+  const lastUser = [...options.history].reverse().find((item) => item.role === 'user')
+  const matched = matchSkills(lastUser?.content ?? '', skills)
   const prefix: ChatMessage[] = [
     {
       role: 'system',
       content:
-        'You are Flux, a workspace-scoped coding assistant. You can inspect the active workspace only through the read_file and grep tools. Do not invent files you have not seen. Prefer searching then reading the exact files you need. Answer in the same language the user uses.'
+        'You are Flux, a workspace-scoped coding assistant. Tools: skill (load ~/.agents/skills), read_file, grep, run_command (local CLI in the workspace). If a listed skill matches the user request, call skill FIRST, then follow it. Do not invent files you have not seen. Never say you only have read_file and grep. Answer in the same language the user uses.'
     },
     {
       role: 'system',
       content: `Environment:\n- workspace: ${options.workspacePath}\n- os: ${os.platform()} ${os.release()}\n- date: ${new Date().toISOString().slice(0, 10)}`
+    },
+    {
+      role: 'system',
+      content: formatSkillsPrompt(skills, matched)
     }
   ]
   if (agents) {

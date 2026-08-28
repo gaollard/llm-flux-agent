@@ -12,6 +12,7 @@ export const IpcChannel = {
   agentAbort: 'agent.abort',
   settingsGet: 'settings.get',
   settingsUpdate: 'settings.update',
+  skillsList: 'skills.list',
   agentEvent: 'agent.event'
 } as const
 

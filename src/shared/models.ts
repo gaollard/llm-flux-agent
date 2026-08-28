@@ -39,6 +39,25 @@ export type PublicSettings = {
   maxContextChars: number
 }
 
+export type SkillSource = 'user' | 'workspace'
+
+export type SkillMeta = {
+  name: string
+  description: string
+  dir: string
+  source: SkillSource
+}
+
+export type SkillsListPayload = {
+  workspaceId?: string
+}
+
+export type SkillsListResult = {
+  skills: SkillMeta[]
+  userRoot: string
+  workspaceRoot: string | null
+}
+
 export type WorkspaceAddPayload = {
   path: string
 }

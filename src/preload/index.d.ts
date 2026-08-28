@@ -5,6 +5,8 @@ import type {
   Message,
   PublicSettings,
   SettingsUpdatePayload,
+  SkillsListPayload,
+  SkillsListResult,
   Thread,
   ThreadCreatePayload,
   ThreadIdPayload,
@@ -41,6 +43,9 @@ export type FluxApi = {
   settings: {
     get: () => Promise<PublicSettings>
     update: (payload: SettingsUpdatePayload) => Promise<PublicSettings>
+  }
+  skills: {
+    list: (payload?: SkillsListPayload) => Promise<SkillsListResult>
   }
 }
 

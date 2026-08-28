@@ -32,6 +32,50 @@ export const TOOLS = [
         required: ['pattern']
       }
     }
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'skill',
+      description:
+        'REQUIRED when the user request matches a listed skill (Confluence, Jira, Google Doc/Sheet, SeaTalk, Figma, GitNexus, Skynet workflows, etc.). Load SKILL.md from ~/.agents/skills or the workspace .agents/skills directory, then follow it. Do not skip this tool and do not answer that you lack skills.',
+      parameters: {
+        type: 'object',
+        properties: {
+          name: {
+            type: 'string',
+            description: 'Skill directory name'
+          },
+          file: {
+            type: 'string',
+            description: 'Optional relative path inside the skill directory. Defaults to SKILL.md'
+          }
+        },
+        required: ['name']
+      }
+    }
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'run_command',
+      description:
+        'Run a local shell command with cwd in the active workspace. Use this to follow skill CLI instructions (e.g. skynet-base confluence read).',
+      parameters: {
+        type: 'object',
+        properties: {
+          command: {
+            type: 'string',
+            description: 'Shell command to run'
+          },
+          cwd: {
+            type: 'string',
+            description: 'Optional working directory, absolute or workspace-relative. Must stay inside the workspace.'
+          }
+        },
+        required: ['command']
+      }
+    }
   }
 ]
 
@@ -121,7 +165,10 @@ export async function streamChat(options: {
     stream: true,
     messages
   }
-  if (useTools) payload.tools = TOOLS
+  if (useTools) {
+    payload.tools = TOOLS
+    payload.tool_choice = 'auto'
+  }
 
   let response: Response
   try {

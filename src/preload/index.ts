@@ -6,6 +6,8 @@ import type {
   AgentSubmitPayload,
   PublicSettings,
   SettingsUpdatePayload,
+  SkillsListPayload,
+  SkillsListResult,
   Thread,
   ThreadCreatePayload,
   ThreadIdPayload,
@@ -62,6 +64,10 @@ const api = {
     get: (): Promise<PublicSettings> => ipcRenderer.invoke(IpcChannel.settingsGet),
     update: (payload: SettingsUpdatePayload): Promise<PublicSettings> =>
       ipcRenderer.invoke(IpcChannel.settingsUpdate, payload)
+  },
+  skills: {
+    list: (payload?: SkillsListPayload): Promise<SkillsListResult> =>
+      ipcRenderer.invoke(IpcChannel.skillsList, payload)
   }
 }
 

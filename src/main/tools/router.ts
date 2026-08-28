@@ -1,7 +1,9 @@
 import { readWorkspaceFile } from './read-file'
 import { grepWorkspace } from './grep'
+import { loadSkillFile } from './skill'
+import { runWorkspaceCommand } from './shell'
 
-export type ToolName = 'read_file' | 'grep'
+export type ToolName = 'read_file' | 'grep' | 'skill' | 'run_command'
 
 export type ToolResult = {
   name: ToolName
@@ -37,6 +39,18 @@ export async function executeTool(
     const pattern = String(args.pattern ?? '')
     const glob = args.glob ? String(args.glob) : undefined
     const output = await grepWorkspace(workspacePath, pattern, glob)
+    return { name, args, output }
+  }
+  if (name === 'skill') {
+    const skillName = String(args.name ?? '')
+    const file = args.file ? String(args.file) : undefined
+    const output = loadSkillFile(workspacePath, skillName, file)
+    return { name, args, output }
+  }
+  if (name === 'run_command') {
+    const command = String(args.command ?? '')
+    const cwd = args.cwd ? String(args.cwd) : undefined
+    const output = await runWorkspaceCommand(workspacePath, command, cwd)
     return { name, args, output }
   }
   return {

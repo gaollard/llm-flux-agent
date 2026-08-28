@@ -89,7 +89,7 @@ export function MessageList() {
     <div className="flex-1 space-y-3 overflow-y-auto px-6 py-5">
       {messages.length === 0 && !streamingText && draftTools.length === 0 ? (
         <div className="flex h-full items-center justify-center text-sm text-zinc-500">
-          在当前工作空间提问，模型会通过 read_file / grep 查阅仓库。
+          在当前工作空间提问。模型可调用 ~/.agents/skills，并用 read_file / grep / run_command 执行。
         </div>
       ) : null}
       {messages

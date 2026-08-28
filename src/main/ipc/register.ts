@@ -4,6 +4,7 @@ import type {
   AgentAbortPayload,
   AgentSubmitPayload,
   SettingsUpdatePayload,
+  SkillsListPayload,
   ThreadCreatePayload,
   ThreadIdPayload,
   ThreadListPayload,
@@ -11,6 +12,7 @@ import type {
   WorkspaceIdPayload
 } from '@shared/models'
 import { abortTurn, submitTurn } from '../agent/loop'
+import { listSkills, userSkillsRoot, workspaceSkillsRoot } from '../skills/loader'
 import { getPublicSettings, updateSettings } from '../store/settings-store'
 import {
   createThread,
@@ -22,6 +24,7 @@ import {
 import {
   addWorkspace,
   getActiveWorkspaceId,
+  getWorkspace,
   listWorkspaces,
   removeWorkspace,
   setActiveWorkspace
@@ -89,5 +92,16 @@ export function registerIpc(): void {
 
   ipcMain.handle(IpcChannel.settingsUpdate, (_event, payload: SettingsUpdatePayload) => {
     return updateSettings(payload)
+  })
+
+  ipcMain.handle(IpcChannel.skillsList, (_event, payload?: SkillsListPayload) => {
+    const workspaceId = payload?.workspaceId ?? getActiveWorkspaceId()
+    const workspace = workspaceId ? getWorkspace(workspaceId) : undefined
+    const workspacePath = workspace?.path
+    return {
+      skills: listSkills(workspacePath),
+      userRoot: userSkillsRoot(),
+      workspaceRoot: workspacePath ? workspaceSkillsRoot(workspacePath) : null
+    }
   })
 }
