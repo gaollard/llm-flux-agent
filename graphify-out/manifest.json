@@ -1,0 +1,154 @@
+{
+  "/Users/xiong.gao/Desktop/flux/electron.vite.config.ts": {
+    "mtime": 1787911034.0018651,
+    "hash": "bd129cdb607e0aeb3f43087d7a1a65db"
+  },
+  "/Users/xiong.gao/Desktop/flux/tailwind.config.js": {
+    "mtime": 1787911836.4364033,
+    "hash": "348954c420857d96865e4a0bca3111fb"
+  },
+  "/Users/xiong.gao/Desktop/flux/postcss.config.js": {
+    "mtime": 1787911034.3472543,
+    "hash": "aa810dc2b09f4e6cefdd4e4c95a1b852"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/App.tsx": {
+    "mtime": 1787911276.1180904,
+    "hash": "80270b437aa3dd77e972de8ecb22ea41"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/main.tsx": {
+    "mtime": 1787911139.5964212,
+    "hash": "334e4f42d9d489277c9898fe32d3e806"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/env.d.ts": {
+    "mtime": 1787911251.8047009,
+    "hash": "760941addfb06e429d6a13f7438a331d"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/stores/app-store.ts": {
+    "mtime": 1787911306.6087284,
+    "hash": "99ee3aedeae9c697a3361ddf588bcca2"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/settings/SettingsPanel.tsx": {
+    "mtime": 1787911872.5913944,
+    "hash": "259e1934fb33a75f883b697ac3e3dae8"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/chat/ThreadList.tsx": {
+    "mtime": 1787911858.1393003,
+    "hash": "7deed2a2361c6e11110ed961d7e0fe1a"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/chat/MessageList.tsx": {
+    "mtime": 1787911861.7913694,
+    "hash": "920187612a57294af43bfea1af93257f"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/chat/Composer.tsx": {
+    "mtime": 1787911864.83582,
+    "hash": "c9d74651ad8b08ed12b513ee66769758"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/components/workspace/WorkspaceSidebar.tsx": {
+    "mtime": 1787911855.9246926,
+    "hash": "e95f5131423f6dc19b6cba109f54e308"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/lib/utils.ts": {
+    "mtime": 1787911139.8162346,
+    "hash": "29a85703c58a9889341b1eb10dac5f05"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/lib/ipc.ts": {
+    "mtime": 1787911154.5344346,
+    "hash": "88e395996c29a28d7d6ead07df71aadf"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/src/pages/WorkspaceChatPage.tsx": {
+    "mtime": 1787911867.953849,
+    "hash": "c9f09ecbf1253000ff81940f407c07ff"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/shared/providers.ts": {
+    "mtime": 1787911657.8260963,
+    "hash": "88c1ec93ce87721269a99b67a949eb0c"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/shared/events.ts": {
+    "mtime": 1787911047.058048,
+    "hash": "7a859bbe6b34d7e5dd07241b236a6866"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/shared/ipc.ts": {
+    "mtime": 1787911042.2055333,
+    "hash": "571e2b0d54943a4f48b17fdf61b6981d"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/shared/models.ts": {
+    "mtime": 1787911041.1308453,
+    "hash": "073247561f22cc40953615fd810ef833"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/ripgrep.d.ts": {
+    "mtime": 1787911251.712766,
+    "hash": "4ca84fddc013b7cb7a2d3b10455396a9"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/index.ts": {
+    "mtime": 1787911878.9014418,
+    "hash": "e5c6061d3e1d48d7f1d9a10088529b4e"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/tools/router.ts": {
+    "mtime": 1787911092.6976385,
+    "hash": "6de21a8ea4800eb4e66a0022e7e73cdb"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/tools/read-file.ts": {
+    "mtime": 1787911077.7640228,
+    "hash": "e8fba12c7af4e38efec8918b1bbf3742"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/tools/grep.ts": {
+    "mtime": 1787911304.071754,
+    "hash": "4aff25885f2a57ac4c0250432a58b14a"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/workspace/ignore.ts": {
+    "mtime": 1787911052.4661021,
+    "hash": "ec99ab4205f74ad417ea1258bc92b69e"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/agent/loop.ts": {
+    "mtime": 1787911112.6264882,
+    "hash": "dd6b243d8e2fc54c332610ec26679c1b"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/agent/llm-client.ts": {
+    "mtime": 1787911679.4461796,
+    "hash": "5742196ea8a60117e7ed27ae3eb75b83"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/agent/context-builder.ts": {
+    "mtime": 1787911112.5811324,
+    "hash": "05e6687553d6dbb4a8e39255835c06f5"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/ipc/register.ts": {
+    "mtime": 1787911508.9769077,
+    "hash": "57a4d2f648b8f9b67d3f4ec93b9e4dea"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/store/thread-store.ts": {
+    "mtime": 1787911294.0800526,
+    "hash": "868aee9a5b04a1754f17aecf6a681edd"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/store/settings-store.ts": {
+    "mtime": 1787911294.1996217,
+    "hash": "5590532228cdc89b896fe8629eff46c5"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/main/store/workspace-store.ts": {
+    "mtime": 1787911256.5781116,
+    "hash": "fdee4e73d0cfadc4f531b71f7794b6a9"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/preload/index.ts": {
+    "mtime": 1787911132.5441546,
+    "hash": "8904ceb79fe2b1dd12d80ac2fbab2d4c"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/preload/index.d.ts": {
+    "mtime": 1787911132.5888605,
+    "hash": "3a36fdb2c52886e702cb93958466549c"
+  },
+  "/Users/xiong.gao/Desktop/flux/prd.md": {
+    "mtime": 1787910006.94256,
+    "hash": "0a9d304bbd03eeea5fdb41e869d1011e"
+  },
+  "/Users/xiong.gao/Desktop/flux/td.md": {
+    "mtime": 1787910131.1588821,
+    "hash": "9c4c3454a26a98ebe42b53dfbef46b06"
+  },
+  "/Users/xiong.gao/Desktop/flux/electron-builder.yml": {
+    "mtime": 1787911211.58014,
+    "hash": "92832f74e4c1836f762914e309b02fd0"
+  },
+  "/Users/xiong.gao/Desktop/flux/src/renderer/index.html": {
+    "mtime": 1787911138.130202,
+    "hash": "a43d37d7f87f7b1ed3696e451d18e56a"
+  }
+}
